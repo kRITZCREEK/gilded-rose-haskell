@@ -1,13 +1,21 @@
 module GildedRose where
 
-type GildedRose = [Item]
+import Prelude
+import Data.Generic (gEq, class Generic)
+import Data.List (List)
+
+type GildedRose = List Item
 
 data Item = Item String Int Int
-  deriving (Eq)
 
-instance Show Item where
+derive instance genericItem :: Generic Item
+
+instance eqItem :: Eq Item where
+  eq = gEq
+
+instance showItem :: Show Item where
   show (Item name sellIn quality) =
-    name ++ ", " ++ show sellIn ++ ", " ++ show quality
+    name <> ", " <> show sellIn <> ", " <> show quality
 
 updateQuality :: GildedRose -> GildedRose
 updateQuality = map updateQualityItem

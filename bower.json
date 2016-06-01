@@ -1,0 +1,22 @@
+{
+  "name": "gilded-rose-haskell",
+  "homepage": "https://github.com/kRITZCREEK/gilded-rose-haskell",
+  "authors": [
+    "Christoph Hegemann <christoph.hegemann1337@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "purescript-console": "^1.0.0",
+    "purescript-lists": "^1.0.0",
+    "purescript-generics": "^1.0.0"
+  }
+}

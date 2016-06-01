@@ -1,0 +1,23 @@
+{
+  "name": "gilded-rose-haskell",
+  "version": "1.0.0",
+  "description": "This is a Haskell port of the *Gilded-Rose-Kata*. For more information visit https://github.com/emilybache/GildedRose-Refactoring-Kata.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "psa \"test/**/*.purs\" \"src/**/*.purs\" \"bower_components/purescript-*/src/**/*.purs\" --stash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kRITZCREEK/gilded-rose-haskell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kRITZCREEK/gilded-rose-haskell/issues"
+  },
+  "homepage": "https://github.com/kRITZCREEK/gilded-rose-haskell#readme"
+}
