@@ -33,7 +33,7 @@ printUpdate (Tuple items day) = do
   log ""
 
 initialInventory :: GildedRose
-initialInventory = fromFoldable
+initialInventory =
   [ Item "+5 Dexterity Vest"                          10  20
   , Item "Aged Brie"                                   2   0
   , Item "Elixir of the Mongoose"                      5   7

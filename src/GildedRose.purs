@@ -1,17 +1,12 @@
 module GildedRose where
 
 import Prelude
-import Data.Generic (gEq, class Generic)
-import Data.List (List)
 
-type GildedRose = List Item
+type GildedRose = Array Item
 
 data Item = Item String Int Int
 
-derive instance genericItem :: Generic Item
-
-instance eqItem :: Eq Item where
-  eq = gEq
+derive instance eqItem :: Eq Item
 
 instance showItem :: Show Item where
   show (Item name sellIn quality) =
