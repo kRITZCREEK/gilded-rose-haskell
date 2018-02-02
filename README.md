@@ -5,12 +5,6 @@ https://github.com/emilybache/GildedRose-Refactoring-Kata.
 
 ## Building and Running
 
-Run `./install_deps.sh` initially, then `./test.sh` to execute the tests after
-each refactoring.
+You'll need `npm` installed and used it to install `bower`, `pulp`, and the compiler with `npm i -g purescript pulp bower`.
 
-To execute the program run `./run.sh [days]` where `[days]` denotes an optional
-parameter for the number of days to simulate.
-
-Tests are in `test/GildedRoseSpec.hs`. Refer to http://hspec.github.io/ for
-more information about writing tests using `Hspec`.
-https://www.fpcomplete.com/ide?git=git://github.com/sheyll/gilded-rose-haskell.git
+Run `bower install` to install dependencies, and `pulp test` to build and test after each refactoring.
